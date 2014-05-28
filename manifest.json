@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Caged",
-  "description": "Everytime you open a new tab, you se Nicholas Cage",
+  "name": "New Chavez",
+  "description": "Everytime you open a new tab, you see Hugo Chavez",
   "version": "1.1",
 
   "chrome_url_overrides" : {
