@@ -10,11 +10,22 @@ Prank2 = {'type': 'photo',
                      'http://i4.chroniclelive.co.uk/incoming/article1355734.ece/alternates/s2197/david-hasselhoff-539431694.jpg']
 }
 
+Prank3 = {'type': 'video', 'name': 'WOAH-OH-OH-AH-AH-AH-AAAA-HA-AH-AH-AH',
+          'url': 'http://www.youtube.com/embed/6EfhAFA2yFE?autoplay=1&amp;controls=0&amp;showinfo=0&amp;autohide=1'}
+
+Prank4 = {'type': 'video', 'name': 'HEYYEYAAEYAAAEYAEYAA',
+          'url': 'http://www.youtube.com/embed/6GggY4TEYbk?autoplay=1&amp;controls=0&amp;showinfo=0&amp;autohide=1'}
+
 pranks['tigresa'] = Prank1;
 pranks['hasselhoff'] = Prank2;
+pranks['woah'] = Prank3;
+pranks['heyye'] = Prank4;
 
 $(document).ready( function(){
-    var currentPrankCode = 'hasselhoff';
+    var currentPrankCode = localStorage.getItem("prankCode");
+    if (currentPrankCode == null) {
+        currentPrankCode = "hasselhoff";
+    }
     var prank = pranks[currentPrankCode]
     switch(prank.type) {
         case 'video':
